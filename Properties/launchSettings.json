@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "myApp": {
+      "commandName": "Project",
+      "commandLineArgs": "-a \"D:\\Users\\wille\\Documents\\Education\\1 Premaster CS\\2ab Software Engineering\\Repository\\DemconSE\\Demcon3D\\Temp\\Bin\\Debug\\Assembly-CSharp.dll\""
+    }
+  }
+}
