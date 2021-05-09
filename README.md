@@ -1,7 +1,7 @@
-## CS-to-PlantUML-Converter
+# CS-to-PlantUML-Converter
 Mini C#/.NET project that compiles a PlantUML class diagram using a C# Project's assembly file. 
 
-# Quick-start
+## Quick-start
 * Clone the project
 * Compile and run it
 * Open the folder in which the compiled code is located (e.g. ``Debug`` or ``Release``). 
@@ -10,7 +10,7 @@ Mini C#/.NET project that compiles a PlantUML class diagram using a C# Project's
 * Run the ``PlantUMLConverer.exe``
 * You can find your generated PlantUMLCode in the ``out.wsd`` file.
 
-# Customisation
+## Customisation
 This tool has a number of customisation options.
 The ``settings.json`` file contains the values ``AssemblyPath``, ``ResourcesPath``, and ``SavePath``. 
 By default, these (excluding ``AssemblyPath``) point to the installation folder, but can be set to anything else. 
