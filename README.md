@@ -7,11 +7,11 @@ Mini C#/.NET project that compiles a PlantUML class diagram using a C# Project's
 * Open the folder in which the compiled code is located (e.g. ``Debug`` or ``Release``). 
 * Open the ``settings.json`` file. 
 * Set the ``AssemblyPath`` variable to your C# assembly file. 
-* Run the ``PlantUMLConverer.exe``
-* You can find your generated PlantUMLCode in the ``out/`` folder.
+* Run the ``PlantUMLConverter.exe``
+* You can find your generated PlantUMLCode in the ``out`` folder.
 
 ## Exporting to other formats
-You can export your plantuml code immediately to other formats; it does, however, have some prerequisites (see [here](https://github.com/KevReed/PlantUml.Net#local-rendering)).
+You can export your plantuml code immediately to other formats; it does, however, have some prerequisites (see [Local Rendering](https://github.com/KevReed/PlantUml.Net#local-rendering)).
 If you don't care about rendering images and just want the ``.wsd`` file, you don't have to do all this stuff.
 By default the software doesn't render images, so if you don't fill in anything for the ``OutputFormats`` field in the ``settings.json`` file, you should be good.
 The ``OutputFormats`` field is an array of numbers, to generate various types of figures, fill in their corresponding number (make sure they're comma separated though).
