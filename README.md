@@ -1,9 +1,6 @@
 # CS-to-PlantUML-Converter
 Mini C#/.NET project that compiles a PlantUML class diagram using a C# Project's assembly file. 
 
-Note, this program only creates the PlantUML code, no PNGs or any other visuals. 
-I recommend using the [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) plugin available in visual studio code to view the corresponding image.
-
 ## Quick-start
 * Clone the project
 * Compile and run it
@@ -11,12 +8,31 @@ I recommend using the [PlantUML](https://marketplace.visualstudio.com/items?item
 * Open the ``settings.json`` file. 
 * Set the ``AssemblyPath`` variable to your C# assembly file. 
 * Run the ``PlantUMLConverer.exe``
-* You can find your generated PlantUMLCode in the ``out.wsd`` file.
+* You can find your generated PlantUMLCode in the ``out/`` folder.
+
+## Exporting to other formats
+You can export your plantuml code immediately to other formats; it does, however, have some prerequisites (see [here](https://github.com/KevReed/PlantUml.Net#local-rendering)).
+If you don't care about rendering images and just want the ``.wsd`` file, you don't have to do all this stuff.
+By default the software doesn't render images, so if you don't fill in anything for the ``OutputFormats`` field in the ``settings.json`` file, you should be good.
+The ``OutputFormats`` field is an array of numbers, to generate various types of figures, fill in their corresponding number (make sure they're comma separated though).
+```
+	Png = 0,
+	Svg = 1,
+	Eps = 2,
+	Pdf = 3,
+	Vdx = 4,
+	Xmi = 5,
+	Scxml = 6,
+	Html = 7,
+	Ascii = 8,
+	Ascii_Unicode = 9,
+	LaTeX = 10
+```
 
 ## Customisation
 This tool has a number of customisation options.
-The ``settings.json`` file contains the values ``AssemblyPath``, ``ResourcesPath``, and ``SavePath``. 
-By default, these (excluding ``AssemblyPath``) point to the installation folder, but can be set to anything else. 
+The ``settings.json`` file contains the values ``AssemblyPath``, ``ResourcePath``, and ``OutputDirectory``. 
+By default, these (excluding ``AssemblyPath``) point to somewhere inside the installation folder, but can be set to anything else. 
 
 The ``resources.json`` file contains the formatting used to generate the PlantUML code -- an array of options. 
 Everything that is possible within these formats can be found on the [PlantUML Webpage](https://plantuml.com/). 
