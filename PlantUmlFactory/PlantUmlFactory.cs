@@ -34,9 +34,16 @@ namespace PlantUmlBuilder
 
         private Settings LoadSettings()
         {
-            string settingsPath = Path.Combine(Directory.GetCurrentDirectory(), "config/settings.json");
+            string currentDirectory = Directory.GetCurrentDirectory();
+            string settingsPath = Path.Combine(currentDirectory, "config/settings.json");
             string json = File.ReadAllText(settingsPath);
             Settings settings = JsonConvert.DeserializeObject<Settings>(json);
+
+            if (settings.OutputDirectory.StartsWith('\\'))
+                settings.OutputDirectory = Path.Combine(currentDirectory, settings.OutputDirectory.Substring(1));
+            if (settings.ResourcePath.StartsWith('\\'))
+                settings.ResourcePath = Path.Combine(currentDirectory, settings.ResourcePath.Substring(1));
+
             Console.WriteLine($"Loaded settings file: {settingsPath}.");
             return settings;
         }
