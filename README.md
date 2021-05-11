@@ -7,8 +7,8 @@ Mini C#/.NET project that compiles a PlantUML class diagram using a C# Project's
 * Open the folder in which the compiled code is located (e.g. ``Debug`` or ``Release``). 
 * Open the ``settings.json`` file. 
 * Set the ``AssemblyPath`` variable to your C# assembly file. 
-* Run the ``PlantUMLConverer.exe``
-* You can find your generated PlantUMLCode in the ``out/`` folder.
+* Run the ``PlantUMLConverter.exe``
+* You can find your generated PlantUMLCode in the ``out`` folder.
 
 ## Exporting to other formats
 You can export your plantuml code immediately to other formats; it does, however, have some prerequisites (see [Local Rendering](https://github.com/KevReed/PlantUml.Net#local-rendering)).
