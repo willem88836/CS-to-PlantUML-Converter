@@ -1,6 +1,9 @@
 # CS-to-PlantUML-Converter
 Mini C#/.NET project that compiles a PlantUML class diagram using a C# Project's assembly file. 
 
+Note, this program only creates the PlantUML code, no PNGs or any other visuals. 
+I recommend using the [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) plugin available in visual studio code to view the corresponding image.
+
 ## Quick-start
 * Clone the project
 * Compile and run it
