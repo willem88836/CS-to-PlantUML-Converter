@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlantUMLBuilder", "PlantUMLBuilder.csproj", "{D0882026-4584-4670-8D45-4A13B968F3EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS-to-PlantUML-Converter", "CS-to-PlantUML-Converter.csproj", "{D0882026-4584-4670-8D45-4A13B968F3EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
